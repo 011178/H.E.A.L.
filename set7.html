@@ -73,50 +73,534 @@
 
                 </ul>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    <input
-                        type="search"
-                        class="form-control" 
-                        style="background-color: #f8c8dc;"
-                        placeholder="Search..."
-                    >
-                </form>
-
-                <div class="text-end">
-                    <button
-                        type="button"
-                        class="btn btn-outline-light me-2"
-                    >
-                        Login
-                    </button>
-
-                    <button
-                        type="button"
-                        class="btn btn-light"
-                    >
-                        Sign up
-                    </button>
-                </div>
-
             </div>
             </header>
-        <div class="lists-container">
-            <ul class="list-group">
-  <li class="list-group-item active" aria-current="true">An active item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
 
-            <ul class="list-group">
-  <li class="list-group-item active" aria-current="true">An active item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-</div>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light">
+
+
+  <!-- MAIN CONTENT -->
+  <main class="container py-5">
+
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+
+        <!-- QUESTION 1 -->
+        <section id="question1" class="question-page">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+
+              <span class="badge bg-primary mb-3">
+                Question 1 of 5
+              </span>
+
+
+              <h3 class="fw-bold mb-4">
+                Brushing teeth
+              </h3>
+
+
+              <div class="answers d-grid gap-3 mb-4">
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  To moisturize teeth
+                </button>
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  To irritate teeth
+                </button>
+
+
+                <button
+                  class="answer correct btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  To clean teeth
+                </button>
+
+
+              </div>
+
+
+              <div class="feedback alert d-none" role="status">
+              </div>
+
+
+              <button
+                class="check-button btn btn-primary"
+                onclick="checkAnswer()"
+                disabled
+              >
+                Check Answer
+              </button>
+
+
+              <button
+                class="next-button btn btn-success d-none"
+                onclick="nextQuestion()"
+              >
+                Next Question →
+              </button>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- QUESTION 2 -->
+        <section id="question2" class="question-page d-none">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+
+              <span class="badge bg-primary mb-3">
+                Question 2 of 5
+              </span>
+
+
+              <h3 class="fw-bold mb-4">
+               Wash hands 
+              </h3>
+
+
+              <div class="answers d-grid gap-3 mb-4">
+
+
+                <button
+                  class="answer correct btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Clean hands with soap and water 
+                </button>
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Clean hands with deodorant and antiperspirant 
+                </button>
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Dirty hands with sweat 
+                </button>
+
+
+              </div>
+
+
+              <div class="feedback alert d-none" role="status">
+              </div>
+
+
+              <button
+                class="check-button btn btn-primary"
+                onclick="checkAnswer()"
+                disabled
+              >
+                Check Answer
+              </button>
+
+
+              <button
+                class="next-button btn btn-success d-none"
+                onclick="nextQuestion()"
+              >
+                Next Question →
+              </button>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- QUESTION 3 -->
+        <section id="question3" class="question-page d-none">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+
+              <span class="badge bg-primary mb-3">
+                Question 3 of 5
+              </span>
+
+
+              <h3 class="fw-bold mb-4">
+                Shower 
+              </h3>
+
+
+              <div class="answers d-grid gap-3 mb-4">
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Brushes hair 
+                </button>
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Cover coughs and sneezes 
+                </button>
+
+
+                <button
+                  class="answer correct btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Freshens and hydrates body 
+                </button>
+
+
+              </div>
+
+
+              <div class="feedback alert d-none" role="status">
+              </div>
+
+
+              <button
+                class="check-button btn btn-primary"
+                onclick="checkAnswer()"
+                disabled
+              >
+                Check Answer
+              </button>
+
+
+              <button
+                class="next-button btn btn-success d-none"
+                onclick="nextQuestion()"
+              >
+                Next Question →
+              </button>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- QUESTION 4 -->
+        <section id="question4" class="question-page d-none">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+
+              <span class="badge bg-primary mb-3">
+                Question 4 of 5
+              </span>
+
+
+              <h3 class="fw-bold mb-4">
+                Wash face 
+              </h3>
+
+
+              <div class="answers d-grid gap-3 mb-4">
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Sweat and bacteria interacting on face 
+                </button>
+
+
+                <button
+                  class="answer correct btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  To clean and hydrate face with water 
+                </button>
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Covering face with arms 
+                </button>
+
+
+              </div>
+
+
+              <div class="feedback alert d-none" role="status">
+              </div>
+
+
+              <button
+                class="check-button btn btn-primary"
+                onclick="checkAnswer()"
+                disabled
+              >
+                Check Answer
+              </button>
+
+
+              <button
+                class="next-button btn btn-success d-none"
+                onclick="nextQuestion()"
+              >
+                Next Question →
+              </button>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- QUESTION 5 -->
+        <section id="question5" class="question-page d-none">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+
+              <span class="badge bg-primary mb-3">
+                Question 5 of 5
+              </span>
+
+
+              <h3 class="fw-bold mb-4">
+               Change clothes 
+              </h3>
+
+
+              <div class="answers d-grid gap-3 mb-4">
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Cleaning and flossing teeth
+                </button>
+
+
+                <button
+                  class="answer btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  Staying sweaty for the whole day
+                </button>
+
+
+                <button
+                  class="answer correct btn btn-outline-primary p-3"
+                  onclick="selectAnswer(this)"
+                >
+                  To freshen up with clean underwear, socks, etc.
+                </button>
+
+
+              </div>
+
+
+              <div class="feedback alert d-none" role="status">
+              </div>
+
+
+              <button
+                class="check-button btn btn-primary"
+                onclick="checkAnswer()"
+                disabled
+              >
+                Check Answer
+            </button>
+
+
+              <button
+                class="next-button btn btn-success d-none"
+                onclick="nextQuestion()"
+              >
+                Finish Quiz →
+              </button>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- COMPLETION SCREEN -->
+        <section id="complete" class="d-none">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-5 text-center">
+
+
+              <h1 class="display-4 mb-3">🎉</h1>
+
+
+              <h2 class="fw-bold">
+                Quiz Complete!
+              </h2>
+
+
+              <p class="text-secondary fs-5">
+                Great job finishing all five questions!
+              </p>
+
+
+              <h3 class="fw-bold mt-4">
+                Your Score:
+              </h3>
+
+
+              <h1 class="display-3 fw-bold text-primary">
+                <span id="score">0</span> / 5
+              </h1>
+
+
+              <p class="text-secondary">
+                Questions answered correctly
+              </p>
+
+
+              <a
+                href="set1.html"
+                class="btn btn-primary btn-lg mt-3"
+              >
+                Play Again
+              </a>
+
+
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <!-- Our JavaScript -->
+  <script src="index.js"></script>
+
+            </div>
+        </div>
+    
+ 
+    
+
+  <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+
+              <button
+                class="next-button btn btn-success d-none"
+                onclick="nextQuestion()"
+              >
+                Finish Quiz →
+              </button>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- COMPLETION SCREEN -->
+        <section id="complete" class="d-none">
+          <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-5 text-center">
+
+
+              <h1 class="display-4 mb-3">🎉</h1>
+
+
+              <h2 class="fw-bold">
+                Quiz Complete!
+              </h2>
+
+
+              <p class="text-secondary fs-5">
+                Great job finishing all five questions!
+              </p>
+
+
+              <h3 class="fw-bold mt-4">
+                Your Score:
+              </h3>
+
+
+              <h1 class="display-3 fw-bold text-primary">
+                <span id="score">0</span> / 5
+              </h1>
+
+
+              <p class="text-secondary">
+                Questions answered correctly
+              </p>
+
+
+              <a
+                href="set7.html"
+                class="btn btn-primary btn-lg mt-3"
+              >
+                Play Again
+              </a>
+
+
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <!-- Our JavaScript -->
+  <script src="index.js"></script>
+
             </div>
         </div>
     
