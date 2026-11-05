@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.E.A.L.</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p-3" style="background-color: #f8c8dc;">
+        <div class="container">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            >
+
+                <a
+                    href="/"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                >
+                    <svg
+                        class="bi me-2"
+                        width="40"
+                        height="32"
+                        role="img"
+                        aria-label="Bootstrap"
+                    >
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul
+                    class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                >
+                    <li>
+                        <a href="index.html" class="nav-link px-2 text-white">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="study.html" class="nav-link px-2 text-white">
+                            Hygiene
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="resources.html" class="nav-link px-2 text-white">
+                            Resources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="games.html" class="nav-link px-2 text-white">
+                            Games
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="nav-link px-2 text-white">
+                            About
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input
+                        type="search"
+                        class="form-control" 
+                        style="background-color: #f8c8dc;"
+                        placeholder="Search..."
+                    >
+                </form>
+
+                <div class="text-end">
+                    <button
+                        type="button"
+                        class="btn btn-outline-light me-2"
+                    >
+                        Login
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-light"
+                    >
+                        Sign up
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+  <!-- MAIN CONTENT -->
+    <div class="container" id="flashcards">
+      <div id="carouselExample" class="carousel slide">
+        <!-- INDICATORS -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Flashcard 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="1"
+            aria-label="Flashcard 2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="2"
+            aria-label="Flashcard 3"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="3"
+            aria-label="Flashcard 4"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="4"
+            aria-label="Flashcard 5"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="5"
+            aria-label="Flashcard 6"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="6"
+            aria-label="Flashcard 7"
+          ></button>
+          
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="7"
+            aria-label="Flashcard 8"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="8"
+            aria-label="Flashcard 9"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="9"
+            aria-label="Flashcard 10"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- FLASHCARD 1 -->
+          <div class="carousel-item active">
+            <input type="checkbox" id="card1" class="flip-checkbox" />
+
+            <label for="card1" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    What is the first hygiene step in the morning?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Brush teeth for about 2 minutes</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- FLASHCARD 2 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card2" class="flip-checkbox" />
+
+            <label for="card2" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    Which of the following should you put on in the morning?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Clean underwear, socks, and clothes</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+
+        <!-- FLASHCARD 3 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card3" class="flip-checkbox" />
+
+            <label for="card3" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    When should students wash their hands during the school day?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Before eating and after using the bathroom</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+
+        <!-- FLASHCARD 4 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card4" class="flip-checkbox" />
+
+            <label for="card4" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    True or False: Students should cover their coughs and sneezes.
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>True</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- FLASHCARD 5 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card5" class="flip-checkbox" />
+
+            <label for="card5" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    What should you do after sports or other activities that make you sweat?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Change out of sweaty clothes and shower or wash</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- FLASHCARD 6 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card6" class="flip-checkbox" />
+
+            <label for="card6" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    Which hair-related activity is part of a good morning hygiene routine?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Combing or brushing your hair</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- FLASHCARD 7 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card7" class="flip-checkbox" />
+
+            <label for="card7" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    True or False: You should apply deodorant or antiperspirant before going to bed.
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>False</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- FLASHCARD 8 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card8" class="flip-checkbox" />
+
+            <label for="card8" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    What should students do to stay hydrated during the school day?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Drink water regularly</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- FLASHCARD 9 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card9" class="flip-checkbox" />
+
+            <label for="card9" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    What should you do with dirty clothes?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3>Put them into the laundry or wash them.</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- FLASHCARD 10 -->
+          <div class="carousel-item">
+            <input type="checkbox" id="card10" class="flip-checkbox" />
+
+            <label for="card10" class="flashcard-container">
+              <div class="flashcard">
+                <!-- FRONT OF CARD -->
+                <div class="face">
+                  <h3>
+                    What should you do after brushing your teeth?
+                  </h3>
+
+                  <p>Tap to reveal answer!</p>
+                </div>
+
+                <!-- BACK OF CARD -->
+                <div class="face back">
+                  <h3> Floss or clean between your teeth</h3>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <!-- PREVIOUS BUTTON -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+          <span class="visually-hidden"> Previous </span>
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+          <span class="visually-hidden"> Next </span>
+        </button>
+      </div>
+    </div>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
