@@ -155,7 +155,8 @@ input::placeholder {
 .roleimages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 200px;
+    column-gap: 330px;
+    row-gap: 100px;
     width: 10rem;
     height: 5rem;
     padding: 50px;
@@ -167,6 +168,32 @@ input::placeholder {
 .roleimages img {
     width: 270px;
     height: 370px;
+    object-fit: cover;
+    display: block;
+}
+
+.resourceimages {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 30px;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.resourceimage1 img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.resourceimage2 img {
+    width: 460px;
+    height: 600px;
     object-fit: cover;
     display: block;
 }
@@ -189,14 +216,6 @@ input::placeholder {
   }
 }
 
-.question-page {
-  display: none;
-}
-
-/* Show the first question */
-#question1 {
-  display: block;
-}
 
 /* Selected answer */
 .answer.selected {
@@ -218,7 +237,6 @@ input::placeholder {
   color: white;
   border-color: #dc3545;
 }
-
 
 
 
